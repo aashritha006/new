@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #141414;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 40px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://via.placeholder.com/1920x500') no-repeat center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .movie-card {
+            background: #222;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/100x40?text=Netflix" alt="Netflix Logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">New & Popular</a>
+            <a href="#">My List</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Featured Movie/Show</h1>
+        <p>Watch now the most trending movie of the season.</p>
+        <button style="padding: 10px 20px; font-size: 16px; background-color: #e50914; border: none; color: white; cursor: pointer;">Watch Now</button>
+    </section>
+
+    <section class="movie-grid">
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x200" alt="Movie Thumbnail">
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x200" alt="Movie Thumbnail">
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x200" alt="Movie Thumbnail">
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x200" alt="Movie Thumbnail">
+        </div>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/150x200" alt="Movie Thumbnail">
+        </div>
+    </section>
+</body>
+</html>
